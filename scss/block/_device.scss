@@ -1,0 +1,73 @@
+// device
+
+.device {
+    padding-block: 78px 100px;
+}
+
+.device__title {
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 21px;
+    margin-inline: 20px;
+}
+
+.device__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.device__item {
+    max-width: 301px;
+    text-align: center;
+
+    &:before {
+        content: "";
+        width: 300px;
+        height: 150px;
+        display: inline-block;
+        background-image: url(../img/Device.svg);
+        margin-bottom: 12px;
+    }
+
+    &:nth-child(2):before {
+        background-image: url(../img/computer.svg);
+    }
+
+    &:nth-child(3):before {
+        background-image: url(../img/mobile.svg);
+    }
+
+    &:nth-child(4):before {
+        background-image: url(../img/game.svg);
+    }
+}
+
+.device__inner_title {
+    color: #F9F9F9;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 38px;
+    margin-bottom: 18px;
+}
+
+.device__inner_item {
+    color: #C0C0C0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    &:not(last-child) {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .device__title {
+        font-size: 32px;
+    }
+}

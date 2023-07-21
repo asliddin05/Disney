@@ -1,0 +1,49 @@
+// general styles
+
+html {
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #040714;
+    font-family: inter;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+}
+.container {
+    max-width: 1320px;
+    padding-inline: 20px;
+    margin: 0 auto;
+}

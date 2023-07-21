@@ -1,0 +1,178 @@
+// plan
+
+.plan {
+    padding-block: 25px 145px;
+}
+
+.plan__title {
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 54px;
+    margin-bottom: 8px;
+}
+
+.plan__text {
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    margin-bottom: 26px;
+}
+
+.plan__box {
+    max-width: 246px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    border: 3px solid #2B2D37;
+    background: #2B2D37;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    &:before {
+        content: "Disney Bundle";
+        width: 135px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 26px;
+        background: #0063E5;
+        color: #F9F9F9;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-right: 16px;
+    }
+
+    &:after {
+        content: "Disney+";
+        color: #F9F9F9;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-right: 16px;
+    }
+}
+
+.plan__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 15px;
+}
+
+.plan__item {
+    max-width: 380px;
+    height: 523px;
+    border: 1px solid #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 41px 45px;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.plan__logo {
+    width: 176px;
+    height: 40px;
+    margin-bottom: 27px;
+}
+
+.plan__logo--active {
+    width: 125px;
+}
+
+.plan__inner_title {
+    color: #F9F9F9;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.plan__title_span {
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plan__inner_item {
+    display: flex;
+    color: #C0C0C0;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+
+    &:before {
+        content: "";
+        width: 15px;
+        height: 13px;
+        background-image: url(../../img/check.svg);
+        flex-shrink: 0;
+        margin-right: 9.5px;
+        margin-top: 4px;
+    }
+}
+
+.plan__price {
+    color: #F9F9F9;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+}
+
+.plan__span {
+    color: #C0C0C0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.plan__btn {
+    width: 100%;
+    padding-block: 18px;
+    border-radius: 4px;
+    background: #0063E5;
+    color: #F9F9F9;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.plan__bottom_text {
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+.plan__bottom_span {
+    color: #F9F9F9;
+}
+
+@media screen and (max-width: 825px) {
+    .plan__title {
+        font-size: 35px;
+    }
+
+    .plan__text {
+        font-size: 16px;
+    }
+}
